@@ -1,4 +1,6 @@
-# example.rb
+# frozen_string_literal: true
+
+# Example class
 class Example
   def greeting
     puts "Hello, World!"

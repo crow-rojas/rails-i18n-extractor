@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+
+# !/usr/bin/env ruby
+
+require "bundler/setup"
+require "rails_i18n_extractor"
+
+RailsI18nExtractor::CLI.start

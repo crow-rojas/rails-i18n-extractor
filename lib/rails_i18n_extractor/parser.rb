@@ -1,6 +1,9 @@
-require 'parser/current'
+# frozen_string_literal: true
 
-module MyI18nExtractorGem
+require "parser/current"
+
+module RailsI18nExtractor
+  # Parser class
   class Parser
     def parse_file(file_path)
       buffer = ::Parser::Source::Buffer.new(file_path)
