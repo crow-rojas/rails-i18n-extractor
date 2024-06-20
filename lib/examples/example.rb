@@ -1,21 +1,17 @@
-# frozen_string_literal: true
-
-# Example class
 class Example
   def greeting
-    puts "Hello, World!"
+    puts(t("translation_key.hello_world"))
   end
 
   def farewell
-    puts "Goodbye, World!"
+    puts(t("translation_key.goodbye_world"))
   end
 
   def custom_message(name)
-    puts "Hello, #{name}!"
+    puts("#{}#{name}#{}")
   end
 end
-
 example = Example.new
 example.greeting
 example.farewell
-example.custom_message("Alice")
+example.custom_message(t("translation_key.alice"))
